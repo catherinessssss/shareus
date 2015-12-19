@@ -1,0 +1,233 @@
+html,body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,p,pre,a,header,footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    height:100%;
+    font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+input[type='button'] ,button{
+    background-color: #e6195e;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+
+.nav-top {
+    color: #e6195e;
+    border: 1px solid #dddddd;
+    height: 40px;
+    width: auto;
+    box-shadow:0 3px 15px #eee;
+    font-size: 20px;
+}
+
+.nav-top button {
+    height: 100%;
+    background-color: transparent;
+    width: 10%;
+    outline: none;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+
+.nav-top button span {
+    width: 35%;
+    background-color: #bbb;
+    height: 7%;
+    margin: 3px 0px 0px 15px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav-top button:hover {
+    transform:rotate(360deg) scale(1.2);
+    -webkit-transform:rotate(360deg) scale(1.2);
+    -moz-transform:rotate(360deg) scale(1.2);
+    -o-transform:rotate(360deg) scale(1.2);
+    -ms-transform:rotate(360deg) scale(1.2);
+    opacity: 0.5;
+}
+
+.nav-top-brand {
+	vertical-align: middle;
+	height: 100%;
+}
+
+
+.nav-top ul {
+    height: 100%;
+    width: 100%
+}
+
+.nav-top li,.nav-top .logo{
+    height: 100%;
+    width: 10%;
+    float: right;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav-top a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-top li:hover {
+    border-bottom: 4px solid #e6195e;
+    color: #e6195e;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+}
+
+.nav-top .logo a{
+    padding: 5px;
+    border: 1px solid #e6195e;
+    border-radius: 5px;
+    color: #e6195e;
+}
+
+.nav-top .logo a:hover {
+    color: #ffffff;
+    background-color: #e6195e;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+}
+
+/* when scrren less than 650px */
+@media only screen and (max-width:650px){
+    .nav-top ul {
+        display: none;
+    }
+
+    .nav-top button {
+        display: inline-block;
+    }
+
+    .nav-top .logo {
+    	display: none;
+    }
+
+    .nav-top-brand {
+    	margin-left: 20%;
+    }
+}
+/* when scrren more than 651px */
+@media only screen and (min-width:651px){
+    .nav-top ul {
+        display: inline;
+    }
+
+    .nav-top button {
+        display: none;
+    }
+
+    .nav-top .logo {
+    	display: inline-block;
+    }
+
+    .nav-top-brand {
+    	margin-left: 5%;
+    }
+}
+
+.search {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.search span {
+    width: 60%;
+    border: 4px solid #e6195e;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.search input[type='text'] {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin: 1%;
+    width: 98%;
+}
+
+.search input[type='button'] {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.key-word {
+    height: 70px;
+}
+
+.key-word input[type='button']:first-child{
+    margin-left: 345px;
+}
+
+.key-word input[type='button'] {
+    height: 25px;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.main-content {
+    height: auto;
+}
+
+.list {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #eeeeee;
+}
+
+.list li {
+    display: block;
+    padding-top: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.list button {
+    width: 40px;
+    height: 100px;
+    display: none;
+}
+
+.sub-content {
+    width: 80%;
+    border: 1px solid #e6195e;
+    margin: auto;
+}
+
+.sub-content b {
+    text-align: center;
+    margin: 20px;
+    display: block;
+    font-size: 20px;
+}
+
+.sub-content span {
+    line-height: 35px;
+}
